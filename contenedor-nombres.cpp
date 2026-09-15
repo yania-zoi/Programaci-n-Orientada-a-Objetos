@@ -7,12 +7,25 @@
  #include <iostream>
  #include <vector>
  #include <string>
+ #include <fstream>
 
  using namespace std;
 //vector<string> compas;
  int main(){
     int opc;
     vector<string> compas;
+    string nombre;
+    ifstream minuevoarchivo("nombres.txt");
+    if (!minuevoarchivo.is_open()) {
+        cout << "No se pudo abrir el archivo." << endl;
+        ofstream minuevoarchivo("nombres.txt");
+        minuevoarchivo.close();
+    } else{
+        while(getline(minuevoarchivo, nombre)){
+            compas.push_back(nombre);
+        }
+        minuevoarchivo.close();
+    }
     do
     {
         cout<< "======= MENU COMPANEROS ======="<<endl;
@@ -22,7 +35,6 @@
         cin>> opc;
         switch(opc){
             case 1:{
-                string nombre;
                 cout<< "ingrese nombre del companero: "<<endl;
                 getline(cin >> ws, nombre);
                 compas.push_back(nombre);
@@ -41,6 +53,12 @@
 
             case 3:{
                 cout<< "BYE BYEEEE..."<<endl;
+                ofstream minuevoarchivo("nombres.txt");
+                for (auto n : compas) {
+                    minuevoarchivo << n << endl;
+                }
+                minuevoarchivo.close();
+
                 break;
             }
 
