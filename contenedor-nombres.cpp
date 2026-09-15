@@ -24,7 +24,7 @@
             case 1:{
                 string nombre;
                 cout<< "ingrese nombre del companero: "<<endl;
-                cin>> nombre;
+                getline(cin, nombre);
                 compas.push_back(nombre);
                 cout<< "Companiero guardado con éxito!"<<endl;
                 break;
