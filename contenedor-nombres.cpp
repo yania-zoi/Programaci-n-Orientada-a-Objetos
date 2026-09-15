@@ -24,9 +24,9 @@
             case 1:{
                 string nombre;
                 cout<< "ingrese nombre del companero: "<<endl;
-                getline(cin, nombre);
+                getline(cin >> ws, nombre);
                 compas.push_back(nombre);
-                cout<< "Companiero guardado con éxito!"<<endl;
+                cout<< "Companiero guardado con exito!"<<endl;
                 break;
             }
 
@@ -35,7 +35,7 @@
                 for (int i=0; i<compas.size();i++){
                     cout<< i+1 <<". "<< compas[i]<<endl;
                 }
-                
+
                 break;
             }
 
@@ -48,6 +48,6 @@
                 cout<< "opcion no valida :p "<<endl;
         }
     } while (opc != 3);
-    
+
  return 0;
  }
