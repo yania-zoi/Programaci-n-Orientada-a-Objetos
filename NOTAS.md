@@ -7,3 +7,4 @@ para repasar, vectores y todas sus funcionalidades, archivos en c++, funciones d
 repasar structs. modo constructor con y sin parametros, getters, setters.
 
 de tarea se creó el objeto persona con el metodo get edad, el profe menciona algo de separados con coma que no entendí. menciona algo de struct fecha que tampoco le entendí.
+crear un vector de objetos persona, con los datos de el objeto.
