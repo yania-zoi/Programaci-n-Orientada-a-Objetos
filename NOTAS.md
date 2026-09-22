@@ -10,3 +10,4 @@ de tarea se creó el objeto persona con el metodo get edad, el profe menciona al
 crear un vector de objetos persona, con los datos de el objeto.
 
 también menciona el profesor algo de crear archivos de una clase .h y .cpp, pero no escuché porque fui al baño
+tampoco le entendí al tema del encapsulamiento ni eso de private ypublic
