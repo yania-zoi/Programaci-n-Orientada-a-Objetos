@@ -3,3 +3,7 @@ posteriormente se observó que la programación orientada a objetos, menciona ob
 también menciona las clases, que ese tema quedó en el aire
 
 para repasar, vectores y todas sus funcionalidades, archivos en c++, funciones de la libreria <ctime>, hacer un calculador de edad para los compañeros con eso, y que cada compañero sea un objeto, cada compañero del contenedor de nombres, donde tambien hay mas datos como telefono, curp, fecha de nacimiento
+
+repasar structs. modo constructor con y sin parametros, getters, setters.
+
+de tarea se creó el objeto persona con el metodo get edad, el profe menciona algo de separados con coma que no entendí. menciona algo de struct fecha que tampoco le entendí.
