@@ -8,3 +8,5 @@ repasar structs. modo constructor con y sin parametros, getters, setters.
 
 de tarea se creó el objeto persona con el metodo get edad, el profe menciona algo de separados con coma que no entendí. menciona algo de struct fecha que tampoco le entendí.
 crear un vector de objetos persona, con los datos de el objeto.
+
+también menciona el profesor algo de crear archivos de una clase .h y .cpp, pero no escuché porque fui al baño
