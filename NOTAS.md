@@ -11,3 +11,5 @@ crear un vector de objetos persona, con los datos de el objeto.
 
 también menciona el profesor algo de crear archivos de una clase .h para definicion de clase y .cpp para la implementcion de los metodos, pero no escuché porque fui al baño
 tampoco le entendí al tema del encapsulamiento ni eso de private ypublic
+
+el contenedor de nombres debe agregar nombre, curp, recha de nacimiento y telefono, calcular edad y añadirla al objeto, eliminar primer persona, y eliminar ultima persona.
