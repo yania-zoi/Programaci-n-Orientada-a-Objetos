@@ -20,17 +20,23 @@ private:
     time_t fecha;
 
 public:
+    //delvcarar el conatructor
     persona(string pnombre="n", long long pnumero= 0, string pcurp="n", time_t pfecha= 0){
         nombre = pnombre;
         numero = pnumero;
         curp = pcurp;
         fecha=pfecha;
     }
+    //getter
+    string getnombre() const {return nombre;}
+
+    //setter
+    void setnombre(string pnombre){nombre = pnombre;}
 };
 
  int main(){
     int opc;
-    vector<string> compas;
+    vector<persona> personas;
     string pnombre;
     ifstream minuevoarchivo("nombres.txt");
     if (!minuevoarchivo.is_open()) {
@@ -39,7 +45,7 @@ public:
         minuevoarchivo.close();
     } else{
         while(getline(minuevoarchivo, pnombre)){
-            compas.push_back(pnombre);
+            personas.push_back(pnombre);
         }
         minuevoarchivo.close();
     }
@@ -54,15 +60,15 @@ public:
             case 1:{
                 cout<< "ingrese nombre del companero: "<<endl;
                 getline(cin >> ws, pnombre);
-                compas.push_back(pnombre);
+                personas.push_back(pnombre);
                 cout<< "Companiero guardado con exito!"<<endl;
                 break;
             }
 
             case 2:{
                 cout<< "==== LISTA DE COMPANEROS ===="<<endl;
-                for (int i=0; i<compas.size();i++){
-                    cout<< i+1 <<". "<< compas[i]<<endl;
+                for (int i=0; i<personas.size();i++){
+                    cout << i+1 <<". "<< personas[i].getnombre()<< endl;
                 }
 
                 break;
@@ -71,8 +77,8 @@ public:
             case 3:{
                 cout<< "BYE BYEEEE..."<<endl;
                 ofstream minuevoarchivo("nombres.txt");
-                for (auto n : compas) {
-                    minuevoarchivo << n << endl;
+                for (auto n : personas) {
+                    minuevoarchivo << n.getnombre() << endl;
                 }
                 minuevoarchivo.close();
 
