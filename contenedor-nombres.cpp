@@ -8,21 +8,38 @@
  #include <vector>
  #include <string>
  #include <fstream>
+ #include <ctime>
 
  using namespace std;
-//vector<string> compas;
+
+class persona{
+private:
+    string nombre;
+    long long numero;
+    string curp;
+    time_t fecha;
+
+public:
+    persona(string pnombre="n", long long pnumero= 0, string pcurp="n", time_t pfecha= 0){
+        nombre = pnombre;
+        numero = pnumero;
+        curp = pcurp;
+        fecha=pfecha;
+    }
+};
+
  int main(){
     int opc;
     vector<string> compas;
-    string nombre;
+    string pnombre;
     ifstream minuevoarchivo("nombres.txt");
     if (!minuevoarchivo.is_open()) {
         cout << "No se pudo abrir el archivo." << endl;
         ofstream minuevoarchivo("nombres.txt");
         minuevoarchivo.close();
     } else{
-        while(getline(minuevoarchivo, nombre)){
-            compas.push_back(nombre);
+        while(getline(minuevoarchivo, pnombre)){
+            compas.push_back(pnombre);
         }
         minuevoarchivo.close();
     }
@@ -36,8 +53,8 @@
         switch(opc){
             case 1:{
                 cout<< "ingrese nombre del companero: "<<endl;
-                getline(cin >> ws, nombre);
-                compas.push_back(nombre);
+                getline(cin >> ws, pnombre);
+                compas.push_back(pnombre);
                 cout<< "Companiero guardado con exito!"<<endl;
                 break;
             }
