@@ -13,3 +13,6 @@ también menciona el profesor algo de crear archivos de una clase .h para defini
 tampoco le entendí al tema del encapsulamiento ni eso de private ypublic
 
 el contenedor de nombres debe agregar nombre, curp, recha de nacimiento y telefono, calcular edad y añadirla al objeto, eliminar primer persona, y eliminar ultima persona.
+
+pendiente estudiar comunicacion entre objetos y proteccion de informacion
+
