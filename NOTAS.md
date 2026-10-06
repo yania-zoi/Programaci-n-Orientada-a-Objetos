@@ -14,5 +14,5 @@ tampoco le entendí al tema del encapsulamiento ni eso de private ypublic
 
 el contenedor de nombres debe agregar nombre, curp, recha de nacimiento y telefono, calcular edad y añadirla al objeto, eliminar primer persona, y eliminar ultima persona.
 
-pendiente estudiar comunicacion entre objetos y proteccion de informacion
+pendiente estudiar comunicacion entre objetos y proteccion de informacion, en clase se realiza la adicion de la funcion de mandar mensaje e ntre objetos o personas con este tema de comunicacion entre objetos
 
